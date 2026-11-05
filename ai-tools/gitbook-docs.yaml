@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: CCV AI Services
+  structure:
+    - type: space
+      key: space-1
+      title: AI Tools by CCV
+      path: ai-tools-by-ccv
+      default: true
+      content:
+        directory: ./
