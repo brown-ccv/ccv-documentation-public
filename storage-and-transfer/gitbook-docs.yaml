@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Storage and Transfer
+  structure:
+    - type: space
+      key: space-1
+      title: Storage and Transfer
+      path: storage-and-transfer
+      default: true
+      content:
+        directory: ./
