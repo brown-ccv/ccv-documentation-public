@@ -1,0 +1,141 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Archive
+  structure:
+    - type: section
+      key: section-5
+      title: Home
+      path: home
+      description: ""
+      icon: circle-house
+      default: true
+      children:
+        - type: space
+          key: space-5
+          title: Archive Home
+          path: landing-page
+          default: true
+          content:
+            directory: ./archive-home
+    - type: section-group
+      key: section-group-2
+      title: Bootcamp
+      icon: boot
+      children:
+        - type: section
+          key: section-10
+          title: Bootcamp
+          path: bootcamp
+          description: ""
+          children:
+            - type: space
+              key: space-10
+              title: Bootcamp Archive Home
+              path: bootcamp-archive-home
+              default: true
+              content:
+                directory: ./bootcamp/bootcamp-archive-home
+        - type: section
+          key: section-9
+          title: Bootcamp 2025
+          path: bootcamp-2025
+          description: ""
+          children:
+            - type: space
+              key: space-9
+              title: Bootcamp 2025
+              path: bootcamp-2025
+              default: true
+              content:
+                directory: ./bootcamp/bootcamp-2025
+        - type: section
+          key: section-7
+          title: Bootcamp 2024
+          path: bootcamp-2024
+          children:
+            - type: space
+              key: space-7
+              title: Bootcamp 2024
+              path: bootcamp-2024
+              default: true
+              content:
+                directory: ./bootcamp/bootcamp-2024
+        - type: section
+          key: section-4
+          title: Bootcamp 2023
+          path: bootcamp-2023
+          children:
+            - type: space
+              key: space-4
+              title: Bootcamp 2023
+              path: bootcamp-2023
+              default: true
+              content:
+                directory: ./bootcamp/bootcamp-2023
+        - type: section
+          key: section-6
+          title: Bootcamp 2022
+          path: bootcamp-2022
+          children:
+            - type: space
+              key: space-6
+              title: Bootcamp 2022
+              path: bootcamp-2022
+              default: true
+              content:
+                directory: ./bootcamp/bootcamp-2022
+        - type: section
+          key: section-1
+          title: Oscar Bootcamp 2021
+          path: oscar-bootcamp-2021
+          children:
+            - type: space
+              key: space-1
+              title: Oscar Bootcamp 2021
+              path: oscar-bootcamp-2021
+              default: true
+              content:
+                directory: ./bootcamp/oscar-bootcamp-2021
+        - type: section
+          key: section-8
+          title: Bootcamp 2021
+          path: bootcamp-2021
+          children:
+            - type: space
+              key: space-8
+              title: Bootcamp 2021
+              path: bootcamp-2021
+              default: true
+              content:
+                directory: ./bootcamp/bootcamp-2021
+    - type: section-group
+      key: section-group-1
+      title: JupyterHub
+      icon: ufo
+      children:
+        - type: section
+          key: section-3
+          title: 1.0.0
+          path: jupyterhub
+          description: ""
+          children:
+            - type: space
+              key: space-3
+              title: 1.0.0
+              path: 1.0.0
+              default: true
+              content:
+                directory: ./jupyterhub/1.0.0
+        - type: section
+          key: section-2
+          title: phys70
+          path: jupyterhub-phys70
+          description: ""
+          children:
+            - type: space
+              key: space-2
+              title: phys70
+              path: phys70
+              default: true
+              content:
+                directory: ./jupyterhub-phys70/phys70
