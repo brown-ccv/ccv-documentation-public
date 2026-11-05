@@ -1,11 +1,11 @@
 $schema: https://api.gitbook.com/gitbook-docs.yaml
 site:
-  title: CCV AI Services
+  title: Storage and Transfer
   structure:
     - type: space
       key: space-1
-      title: AI Tools by CCV
-      path: ai-tools-by-ccv
+      title: Storage and Transfer
+      path: storage-and-transfer
       default: true
       content:
-        directory: ./ai-tools
+        directory: ./storage-and-transfer
