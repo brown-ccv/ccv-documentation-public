@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Stronghold
+  structure:
+    - type: space
+      key: space-1
+      title: Stronghold
+      path: stronghold
+      default: true
+      content:
+        directory: ./
