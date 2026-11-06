@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: APMA Research Systems
+  structure:
+    - type: space
+      key: space-1
+      title: Applied Math Research Systems
+      path: applied-math-research-systems
+      default: true
+      content:
+        directory: ./
