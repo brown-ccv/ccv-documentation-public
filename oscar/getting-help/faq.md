@@ -1,0 +1,212 @@
+# ❓ FAQ
+
+## General
+
+### How do I request help?
+
+Most inquiries can be directed to CCV’s support address, `support@ccv.brown.edu`, which will create a support ticket with one of our staff.
+
+### What are the fees for CCV services?
+
+All CCV services are billed quarterly, and rates can be found on [CCV's rate page](https://ccv.brown.edu/services/rates). Questions about rates should be directed to `support@ccv.brown.edu`.
+
+### How do I acknowledge CCV in a research publication?
+
+We greatly appreciate acknowledgements in research publications that benefited from the use of CCV services or resources.
+
+## Oscar
+
+### What is Oscar?
+
+Oscar is our primary research computing cluster with several hundred multi-core nodes sharing a high-performance interconnect and file system. Applications can be run interactively or scheduled as batch jobs.
+
+### How do I request an account on Oscar?
+
+To request an account, please fill out a [New User Account Form.](https://brown.co1.qualtrics.com/jfe/form/SV_0GtBE8kWJpmeG4B) All accounts are subject to our [General Terms and Conditions](https://it.brown.edu/computing-policies).
+
+### How do I run a job on Oscar?
+
+Sample batch scripts are available in your home directory at `~/batch_scripts` and can be run with the `sbatch <jobscript>` command. For more information, visit our manual page on [Batch Jobs](../submitting-jobs/batch.md).
+
+### Can I use Oscar for teaching?
+
+See our page on [Student Accounts](https://ccv.brown.edu/services/classroom#student-accounts)
+
+### How do I find out when the system is down?
+
+We post updates to our user mailing list, `ccv@listserv.brown.edu` which you are automatically subscribed to when setting up an account with CCV. If you need to be added to the mailing list, please submit a support ticket to `support@ccv.brown.edu`. We also have an announcement mailing list for office hours, workshops and other events relevant to CCV users, `ccv-announce.listserve.brown.edu`.
+
+### How do I run a job array on Oscar?
+
+A job array is a special type of job submission that allows you to submit many related batch jobs with a single command. This makes it easy to do parameter sweeps or other schemes where the submitted jobs are all the same except for a single parameter such as a filename or input variable. Job arrays require special syntax in your job script. Sample batch scripts for job arrays are available in your home directory at `~/batch_scripts` and can be run with the `sbatch <jobscript>` command. For more information, visit our manual page on [Running Jobs](../submitting-jobs/array.md).
+
+### How do I run a MPI job on Oscar?
+
+MPI is a type of programming interface. Programs written with MPI can run on and communicate across multiple nodes. You can run MPI-capable programs by calling `srun --mpi=pmix <program>` in your batch script. For more detailed info, visit our manual page on [MPI programs](../submitting-jobs/mpi-jobs.md).
+
+### I have some MPI-enabled source code. How can I compile it on Oscar?
+
+Load an mpi module `module load mpi`. For a list of mpi modules available, `module avail mpi`
+
+### What applications are available on Oscar?
+
+Many scientific and HPC software packages are already installed on Oscar, including python, perl, R, Matlab, Mathematica, and Maple. Use the `module avail` command on Oscar to view the whole list or search for packages. See our manual page on [Software](../software/software.md) to understand how software modules work. Additional packages can be requested by submitting a support ticket to `support@ccv.brown.edu`.
+
+### What compilers are available on Oscar?
+
+By default, the `gcc` compiler is available when you login to Oscar, providing the GNU compiler suite of `gcc` (C), `g++` (C++), and `gfortran`. We also provide compilers from Intel (`intel` module) and the Portland Group (`pgi` module). For more information, visit our manual page on [Software](../software/software.md).
+
+### How do I get information about finished jobs?
+
+The `sacct` command will list all of your completed jobs since midnight of the previous day (as well as running and queued jobs). You can pick an earlier start date with the `-S` option, e.g. `sacct -S 2012-01-01`.
+
+### How much storage am I using?
+
+The `checkquota` command on Oscar will print a summary of the usage of your directories. For more information, see our manual page on [File Systems](../managing-files/filesystem.md).
+
+### My job keeps terminating unexpectedly with a "Killed" message, or without any errors. What happened?
+
+These are symptoms of not requesting enough memory for your job. The default memory allocation is about 3 GB. If your job is resource-intensive, you may need to specifically allocate more. See the [user manual](../submitting-jobs/batch.md#sbatch-command-options) for instructions on requesting memory and other resources.
+
+### How do I request a certain amount of memory per CPU?
+
+Specify the SLURM option `--mem-per-cpu=` in your script.
+
+### How do I link against a BLAS and LAPACK library?
+
+We recommend linking against the OpenBLAS library. The easiest way to do this on Oscar is to `module load openblas` and linking against that, e.g., `gcc -o myapp myapp.c -lopenblas` . You can use the same approach for Lapack as well: `module load netlib-lapack` and `gcc -o myapp myapp.c -llapack -lblas`.
+
+If you need to use Intel Math Kernels Library (MKL), keep in mind that the performance will suffer unless you are explicitly on Intel nodes. The easiest way to do this on Oscar is to include the special environment variable `$MKL` at the end of your link line, e.g. `gcc -o blas-app blas-app.c $MKL`. For more complicated build systems, you may want to consult the [MKL Link Line Advisor](http://software.intel.com/en-us/articles/intel-mkl-link-line-advisor).
+
+### **I am getting a "WARNING: Remote HOST IDENTIFICATION HAS CHANGED?**
+
+We have recently updated the gateway node hardware to improve performance, security, and reliability. As a result of this migration, the SSH host keys for our servers have been updated. To fix this:
+
+* **On MacOS:**
+
+```bash
+sed -i '' -e '/^ssh.ccv/d' -e '/^sshcampus.ccv/d' -e '/^pccvoodcit/d' ~/.ssh/known_hosts
+```
+
+* **On Linux:**
+
+```bash
+sed -i -e '/^ssh.ccv/d' -e '/^sshcampus.ccv/d' -e '/^pccvoodcit/d' ~/.ssh/known_hosts
+```
+
+* **On Windows:** from VSCode's internal terminal Window:
+
+```bash
+vi ~/.ssh/known_hosts 
+```
+
+and delete the lines starting with these phrases
+
+```
+ssh.ccv
+sshcampus.ccv
+pccvoodcit
+```
+
+After making these changes, you will be see a warning claiming that `The authenticity of host <host> can't be established` . Type "yes" to continue.
+
+{% hint style="info" icon="triangle-exclamation" %}
+If you are connecting using VSCode, the above warning is not entirely visible. Hold your mouse on the text-box to see the entire warning. Enter "yes" to continue
+{% endhint %}
+
+* **OpenOnDemand (OOD) Shell Access:** either get a Desktop session or login via regular terminal into 'ssh.ccv.brown.edu' and run
+
+```bash
+sed -i -e '/^oscar/d' -e '/^vscode/d' ~/.ssh/known_hosts
+```
+
+Then login again via OOD > Clusters
+
+## RUNNING JOBS
+
+### How is a job identified?
+
+By a unique JobID, e.g. `1318013`
+
+### Which of my jobs are running/pending?
+
+Use the command `myq`
+
+### How do I check the progress of my running job?
+
+You can look at the output file. The default output file is slurm-%j.out" where %j is the JobID. If you specified and output file using `#SBATCH -o output_filename` and/or an error file `#SBATCH -e error_filename` you can check these files for any output from your job. You can view the contents of a text file using the program `less` , e.g.
+
+```bash
+less output_filename
+```
+
+Use the `spacebar` to move down the file, `b` to move back up the file, and `q` to quit.
+
+### My job is not running how I intended it to. How do I cancel the job?
+
+`scancel <JobID>` where `<JobID>` is the job allocation number, e.g. `13180139`
+
+### How do I save a copy of an interactive session?
+
+You can use `interact -o outfile` to save a copy of the session's output to "outfile"
+
+I've submitted a bunch of jobs. How do I tell which one is which? `myq` will list the running and pending jobs with their JobID and the name of the job. The name of the job is set in the batch script with `#SBATCH -J jobname`. For jobs that are in the queue (running or pending) you can use the command `scontrol show job <JobID>` where `<JobID>` is the job allocation number, e.g.`13180139` to give you more detail about what was submitted.
+
+### How do I ask for a haswell node?
+
+Use the `--constraint` (or `-C`) option:
+
+```bash
+#SBATCH --constraint=haswell
+```
+
+You can use the `--constraint` option restrict your allocation according to other features too. The `nodes` command provides a list of "features" for each type of node.
+
+### Why won't my job start?
+
+When your job is pending (PD) in the queue, SLURM will display a reason why your job is pending. The table below shows some common reasons for which jobs are kept pending.
+
+| Reason               | Meaning                                                                                                                                                                                                                                                                                                                  |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| (None)               | You may see this for a short time when you first submit a job                                                                                                                                                                                                                                                            |
+| (QOSGrpCpuLimit)     | All your condo cores are currently in use                                                                                                                                                                                                                                                                                |
+| (QOSGrpMemLimit)     | The total memory of your running jobs and this pending job is more than the limit for your account.                                                                                                                                                                                                                      |
+| (Priority)           | Jobs with higher priority are using the resources                                                                                                                                                                                                                                                                        |
+| (Resources)          | There are not enough free resources to fulfill your request                                                                                                                                                                                                                                                              |
+| (JobHeldUser)        | You have put a hold on the job. The job **will not run** until you lift the hold.                                                                                                                                                                                                                                        |
+| (ReqNodeNotAvail)    | The resources you have requested are not available. Note this normally means you have requested something impossible, e.g. 100 cores on 1 node, or a 24 core sandy bridge node. Double check your batch script for any errors. Your job **will never run** if you are requesting something that does not exist on Oscar. |
+| (PartitionNodeLimit) | You have asked for more nodes than exist in the partition. For example if you make a typo and have specified -N (nodes) but meant -n (tasks) and have asked for more than 64 nodes. Your job **will never run**. Double check your batch script.                                                                         |
+
+#### Why is my job taking so long to start? Just waiting in (Priority) or (Resources)
+
+1. **Overall system busy**: when tens of thousands of jobs are submitted it total by all users, the time it takes SLURM to process these into the system may increase from the normal almost instantly to a half-hour or more.
+2. **Specific resource busy**: if you request very specific resources (e.g., a specific processor) you then have to wait for that specific resource to become available while other similar resources may be going unused.
+3. **Specified resource not available**: if you request something that is not or may never be available, your job will simply wait in the queue. E.g., requesting 64 GB of RAM on a 64 GB node will never run because the system needs at least 1 GB for itself so you should reduce your request to less than 64.
+
+## TRANSFERRING FILES
+
+### How do I transfer big files to/from Oscar?
+
+Please use the server **transfer.ccv.brown.edu**
+
+1. Transfer local file to Oscar:
+
+```bash
+sftp <username>@transfer.ccv.brown.edu 
+put /path/local_file
+```
+
+2\. Transfer remote file on Oscar to the local system:
+
+```bash
+sftp <username>@transfer.ccv.brown.edu 
+get -r filename.txt 
+```
+
+Alternatively, Oscar has an endpoint for "Globusonline" ([https://www.globus.org](https://www.globus.org)) that you can use to more effectively transfer files. See our manual page on how to use [Globus Online](https://github.com/brown-ccv/oscar-documentation/blob/master/getting-help/broken-reference/README.md) to transfer files.
+
+## Cloud HPC Options
+
+The use of cloud resources for HPC varies according to your demands and circumstances. Cloud options are changing rapidly both in service providers and various services being offered. For those who have short-term needs that don't demand the highest of computational performance, a cloud option might be appropriate. For others, a local option customized to individual needs may be better. The cost of cloud services also varies quite a bit and includes not only compute time but data transfer charges. Other issues involved licensing, file synchronization, etc.
+
+We are actively investigating a number of options to connect Brown users seamlessly to suitable cloud options. We are collecting such information for publishing on the CIS website as part of research services available. At this point, the best course of action is to request an individual consultation to help address your specific needs. Please send email to support@ccv. brown.edu.

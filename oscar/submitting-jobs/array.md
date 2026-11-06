@@ -1,0 +1,57 @@
+# Job Arrays
+
+A job array is a collection of jobs that all run the same program, but on different values of a parameter. It is very useful for running parameter sweeps, since you don't have to write a separate batch script for each parameter setting.
+
+To use a job array, add the option:
+
+```bash
+#SBATCH --array=<range>
+```
+
+in your batch script. The range can be a comma separated list of integers, along with ranges separated by a dash. For example:
+
+```
+1-20
+1-10,12,14,16-20
+```
+
+A job will be submitted for _each_ value in the range. The values in the range will be substituted for the variable `$SLURM_ARRAY_TASK_ID` in the remainder of the script. Here is an example of a script for running a serial Matlab script on 16 different parameters by submitting 16 different jobs as an array:
+
+```bash
+#!/bin/bash
+#SBATCH -J MATLAB
+#SBATCH -t 1:00:00
+#SBATCH --array=1-16
+
+# Use '%A' for array-job ID, '%J' for job ID and '%a' for task ID
+#SBATCH -e arrayjob-%a.err
+#SBATCH -o arrayjob-%a.out
+
+echo "Starting job $SLURM_ARRAY_TASK_ID on $HOSTNAME"
+matlab -r "MyMatlabFunction($SLURM_ARRAY_TASK_ID); quit;"
+```
+
+You can then submit the multiple jobs using a single `sbatch` command:
+
+```bash
+$ sbatch <jobscript>
+```
+
+The `$SLURM_ARRAY_TASK_ID` can be manipulated as needed. For example, you can generate a fixed length number form it. The following example generates a number of length of 3 from `$SLURM_ARRAY_TASK_ID`.
+
+```bash
+#!/bin/bash
+#SBATCH -J MATLAB
+#SBATCH -t 1:00:00
+#SBATCH --array=1-16
+
+# Use '%A' for array-job ID, '%J' for job ID and '%a' for task ID
+#SBATCH -e arrayjob-%a.err
+#SBATCH -o arrayjob-%a.out
+
+echo "Starting job $SLURM_ARRAY_TASK_ID on $HOSTNAME"
+t=`printf "%03d" $SLURM_ARRAY_TASK_ID`
+matlab -r "MyMatlabFunction($t); quit;"
+```
+
+For more info: [https://slurm.schedmd.com/job\_array.html](https://slurm.schedmd.com/job_array.html)
