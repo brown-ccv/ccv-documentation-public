@@ -47,11 +47,11 @@ Windows users need to install an SSH client. We recommend [PuTTY](http://www.chi
 
 * If you are not connected to the Brown VPN, use `username@ssh.ccv.brown.edu` as the Host Name and click Open.
 
-![PuTTY configuration window with Host Name set to "username@ssh.ccv.brown.edu" for connecting to Oscar without VPN](<../../.gitbook/assets/image (43).png>)
+![PuTTY configuration window with Host Name set to "username@ssh.ccv.brown.edu" for connecting to Oscar without VPN](<../../.gitbook/assets/image (42).png>)
 
 * If you are connected to the Brown VPN, use `username@sshvpn.ccv.brown.edu` as the Host Name and click Open.
 
-![PuTTY configuration window with Host Name set to "username@sshvpn.ccv.brown.edu" for connecting to Oscar via VPN](<../../.gitbook/assets/image (45).png>)
+![PuTTY configuration window with Host Name set to "username@sshvpn.ccv.brown.edu" for connecting to Oscar via VPN](<../../.gitbook/assets/image (44).png>)
 
 {% hint style="info" %}
 Confused? Watch our [tutorial on PuTTY installation](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9323efff-236f-4408-8006-acf3012bea9b) or [SSHing to Oscar on Windows](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1b172848-b8b3-42f7-ba20-acf3012ee4c5).

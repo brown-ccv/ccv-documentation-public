@@ -40,4 +40,4 @@ This guide is only for users connecting from Non-Brown Compliant Networks. 2-FA 
     <figure><img src="../../.gitbook/assets/vscode_setup.png" alt="select vscode node"><figcaption></figcaption></figure>
 6.  When prompted in VSCode, please enter your Brown password and complete the DUO authentication. After that, wait about 30 seconds and VSCode should connect to Oscar.
 
-    <figure><img src="../../.gitbook/assets/image (52).png" alt="Enter your Brown password and confirm access"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (51).png" alt="Enter your Brown password and confirm access"><figcaption></figcaption></figure>

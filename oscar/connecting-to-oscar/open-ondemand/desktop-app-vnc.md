@@ -22,7 +22,7 @@ Do not load any `anaconda` module in your .modules or .bashrc file. These module
 
 ### 2. Choose the resource option:
 
-<figure><img src="../../.gitbook/assets/image (47).png" alt="Desktop app resource configuration form showing a dropdown menu with several resource presets for cores, memory, and duration."><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (46).png" alt="Desktop app resource configuration form showing a dropdown menu with several resource presets for cores, memory, and duration."><figcaption></figcaption></figure>
 
 ### 3. Wait and Launch! (VNC)
 
@@ -42,7 +42,7 @@ A session may get disconnected if it is not active for a while:
 
 If the session **disconnects** as shown above, please **don't** click the "Connect" button on the screen. You may go to **Open OnDemand** page and click “**My Interactive Sessions**” to find the session again:
 
-<figure><img src="../../.gitbook/assets/image (49).png" alt="Screenshot of the OpenOnDemand navigation bar with My Interactive Sessions circled in red."><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (48).png" alt="Screenshot of the OpenOnDemand navigation bar with My Interactive Sessions circled in red."><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Please don’t launch a new session if you have an existing session. You cannot launch two desktop sessions at the same time.
@@ -72,7 +72,7 @@ Click the side panel button on the extreme left hand side of the screen.
 * To copy text into the Desktop session, paste the data into the Clipboard. It will be available to paste inside the Desktop session.
 * To copy text from the Desktop session, open the Clipboard. The copied text will be displayed inside it. You can select and copy the text inside the Clipboard and paste it to an external program.
 
-<figure><img src="../../.gitbook/assets/image (42).png" alt="The noVNC side menu expanded, showing the Clipboard icon and a text box for copying and pasting text."><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (41).png" alt="The noVNC side menu expanded, showing the Clipboard icon and a text box for copying and pasting text."><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
