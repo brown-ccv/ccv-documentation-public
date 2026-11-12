@@ -1,10 +1,10 @@
-# CCV Documentation Repository
+# CCV Documentation Public Repository
 
-This monorepo contains comprehensive documentation, guides, and resources for the Center for Computation and Visualization (CCV) at Brown University.
+This monorepo contains comprehensive public documentation, guides, and resources for the Center for Computation and Visualization (CCV) at Brown University.
 
 ## Repository Structure
 
-GitBook's GitHub Sync links a GitBook space to a GitHub repository or to a folder in a monorepo.
+GitBook's GitHub Sync links a GitBook site a folder in this monorepo.
 
 In GitBook, *spaces* are the private, internal containers where you create and edit documentation pages as the content source. *Sites* are the public-facing, customized, and published versions of that content. Sites are linked to spaces and have an m-n relationship.
 
