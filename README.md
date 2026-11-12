@@ -18,6 +18,11 @@ Below, the tree illustrates how different sites in this repository are linked to
     └── Linked to Space C
 ```
 
+## CCV Website Search
+The search index on the [CCV website](https://github.com/brown-ccv/ccv-website) is built from the content in this repository. 
+
+Push to `main` notifies the ccv-website repo via Github actions so it can rebuild the search index.
+
 ## Linting
 
 Markdown files in this repository are linted using [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) with [GitHub's recommended markdownlint configurations](https://github.com/github/markdownlint-github).
