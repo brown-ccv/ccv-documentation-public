@@ -6,7 +6,6 @@
   * [Transcribe Data Handling (Level 3)](data-privacy/transcribe-data-handling-level-3/README.md)
     * [Data Security Best Practices](data-privacy/transcribe-data-handling-level-3/data-security-best-practices.md)
   * [LibreChat Data Handling (Level 2)](data-privacy/librechat-data-handling-level-2.md)
-  * [Ask Oscar Data Handling (Level 2)](data-privacy/ask-oscar-data-handling-level-2.md)
 * [Costs and Limits](costs-and-limits.md)
 * [Sustainability](sustainability.md)
 * [Contact Us](contact-us.md)
@@ -33,5 +32,4 @@
   * [Creating and Using Agents](services/librechat/creating-and-using-agents.md)
   * [Sharing Agents](services/librechat/sharing-agents.md)
   * [Frequently Asked Questions (FAQ)](services/librechat/frequently-asked-questions-faq.md)
-* [Ask Oscar](services/ask-oscar.md)
 * [Upcoming services](services/upcoming-services.md)

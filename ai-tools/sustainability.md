@@ -110,7 +110,3 @@ Azure and Whisper carbon emission should not be compared directly. Azure's data,
 ## LibreChat
 
 We're currently working on collecting climate data for LibreChat.
-
-### Ask Oscar
-
-We're currently working on collecting climate data for Ask Oscar.

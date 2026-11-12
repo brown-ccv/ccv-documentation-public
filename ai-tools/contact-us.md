@@ -21,4 +21,4 @@ Please utilize e-mail for bugs (and [include screenshots](https://www.take-a-scr
 
 ## Providing Feedback
 
-We always appreciate your feedback! Please use the [CCV AI Services Feeback Form](https://forms.gle/w9bn1zFXrYatc1V57) for any comments/feedback/suggestions related to Transcribe, LibreChat, or Ask Oscar.
+We always appreciate your feedback! Please use the [CCV AI Services Feeback Form](https://forms.gle/w9bn1zFXrYatc1V57) for any comments/feedback/suggestions related to Transcribe or LibreChat.
