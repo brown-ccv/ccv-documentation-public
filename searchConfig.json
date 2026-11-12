@@ -1,6 +1,6 @@
 {
   "ignore": {
-    "files": ["SUMMARY.md"],
+    "files": ["SUMMARY.md", "gitbook-docs.yaml"],
     "folders": [".gitbook"]
   },
   "include": [

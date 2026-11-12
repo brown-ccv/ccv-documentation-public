@@ -1,4 +1,4 @@
-name: Build CCV Website Search Index
+name: Trigger CCV Website Search Index Build
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
 
 
 jobs:
-  build-search-index:
+  trigger-search-index-build:
     runs-on: ubuntu-latest
     steps:
     - name: Trigger ccv-website search index build
