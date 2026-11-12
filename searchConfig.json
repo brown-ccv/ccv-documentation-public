@@ -1,0 +1,24 @@
+{
+  "ignore": {
+    "files": ["SUMMARY.md"],
+    "folders": [".gitbook"]
+  },
+  "include": [
+    {
+      "name": "AI Tools",
+      "slug": "ai-tools"
+    },
+    {
+      "name": "Hibernate",
+      "slug": "hibernate"
+    },
+    {
+      "name": "Oscar",
+      "slug": "oscar"
+    },
+    {
+      "name": "Storage and Transfer",
+      "slug": "storage-and-transfer"
+    }
+  ]
+}
