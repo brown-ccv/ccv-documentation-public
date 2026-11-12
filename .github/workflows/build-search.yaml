@@ -1,0 +1,17 @@
+name: Build CCV Website Search Index
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  build-search-index:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Trigger ccv-website search index build
+      uses: peter-evans/repository-dispatch@v4
+      with:
+        token: ${{ secrets.CROSS_REPO_TOKEN }}
+        repository: brown-ccv/ccv-website
+        event-type: ccv-documentation-updated

@@ -1,0 +1,120 @@
+{
+  "styling": {
+    "theme": "clean",
+    "primaryColor": {
+      "dark": "#87CEFA",
+      "light": "#067F6E"
+    },
+    "infoColor": {
+      "dark": "#787878",
+      "light": "#787878"
+    },
+    "successColor": {
+      "dark": "#00C950",
+      "light": "#00C950"
+    },
+    "warningColor": {
+      "dark": "#FE9A00",
+      "light": "#FE9A00"
+    },
+    "dangerColor": {
+      "dark": "#FB2C36",
+      "light": "#FB2C36"
+    },
+    "tint": {
+      "color": {
+        "dark": "#346DDB",
+        "light": "#4EAAC8"
+      }
+    },
+    "corners": "rounded",
+    "depth": "flat",
+    "links": "default",
+    "font": {
+      "id": "font_RkoUm",
+      "custom": true,
+      "fontFamily": "Geist",
+      "fontFaces": [
+        {
+          "weight": 400,
+          "sources": [
+            {
+              "url": "https://fonts.gitbook.com/font/custom/-LLCCXzgv2-pRyGi-QB2/5675218/geist-regular.woff2"
+            }
+          ]
+        },
+        {
+          "weight": 600,
+          "sources": [
+            {
+              "url": "https://fonts.gitbook.com/font/custom/-LLCCXzgv2-pRyGi-QB2/4494169/geist-semibold.woff2"
+            }
+          ]
+        },
+        {
+          "weight": 700,
+          "sources": [
+            {
+              "url": "https://fonts.gitbook.com/font/custom/-LLCCXzgv2-pRyGi-QB2/2445325/geist-bold.woff2"
+            }
+          ]
+        }
+      ],
+      "permissions": {
+        "edit": true
+      }
+    },
+    "monospaceFont": {
+      "id": "font_Noxys",
+      "custom": true,
+      "fontFamily": "Geist Code",
+      "fontFaces": [
+        {
+          "weight": 400,
+          "sources": [
+            {
+              "url": "https://fonts.gitbook.com/font/custom/-LLCCXzgv2-pRyGi-QB2/3094285/geistmono-regular.woff2"
+            }
+          ]
+        },
+        {
+          "weight": 600,
+          "sources": [
+            {
+              "url": "https://fonts.gitbook.com/font/custom/-LLCCXzgv2-pRyGi-QB2/6337797/geistmono-semibold.woff2"
+            }
+          ]
+        },
+        {
+          "weight": 700,
+          "sources": [
+            {
+              "url": "https://fonts.gitbook.com/font/custom/-LLCCXzgv2-pRyGi-QB2/3125224/geistmono-bold.woff2"
+            }
+          ]
+        }
+      ],
+      "permissions": {
+        "edit": true
+      }
+    },
+    "icons": "duotone",
+    "background": "plain",
+    "sidebar": {
+      "background": "default",
+      "list": "line"
+    },
+    "codeTheme": {
+      "default": {
+        "light": "default-light",
+        "dark": "default-dark"
+      },
+      "openapi": {
+        "light": "default-light",
+        "dark": "default-dark"
+      }
+    },
+    "search": "subtle"
+  },
+  "themes": { "default": "system", "toggeable": true }
+}
