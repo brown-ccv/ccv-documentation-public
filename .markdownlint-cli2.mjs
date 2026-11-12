@@ -30,22 +30,10 @@ const markdownItFactory = () => markdownIt({ html: true })
 const options = {
     ignores: [
       ".gitbook",
-      "node_modules", 
+      "node_modules",
 
       // Gitbook sites
       "archive",                                  // Archived sites and spaces
-      "cbc-internal-docs",                        // TODO: Ask if we should update
-      "ccv-research-support-operating-manuals",   // TODO: Ask if we should update
-      "globus",                                   // Content moved to storage-and-transfer
-      "hibernate",                                // Content moved to storage-and-transfer
-      "hpc-documentation",                        // TODO: Ask if we should update
-      "hpc-staff-guidebook",                      // TODO: Ask if we should update
-      "jupyterhub-developers",                    // TODO: Ask if we should update
-      "openondemand",                             // TODO: Ask if we should update
-      "singularity",                              // Unpublished from Gitbook
-      "starfish",                                 // Content moved to storage-and-transfer
-      "terms-and-conditions",                     // Unpublished from Gitbook
-      "visualization",                            // Relevant content to be moved into other GitBooks     
 
       // Explicitly Ignored Metadata Files
       "SUMMARY.md"
@@ -57,7 +45,7 @@ const options = {
       ...( process.env.REPORT ? [
         [ "markdownlint-cli2-formatter-json", { "name": "./markdownlint-cli2-results.json"} ],
         [ "markdownlint-cli2-formatter-summarize", { "byRule": true } ]
-      ] 
+      ]
       : [[ "markdownlint-cli2-formatter-pretty", { "appendLink": true } ]]
     )]
 }
