@@ -59,11 +59,13 @@ Host jump-box
     StrictHostKeyChecking accept-new
 
 Host ccv-vscode-node
-    HostName vscode
+    HostName <vscode>
     User <username>
     ProxyCommand ssh -q -W %h:%p jump-box
     StrictHostKeyChecking accept-new
 ```
+
+You need to randomly replace `<vscode>` with `vscode1` or `vscode2`
 
 ### Step 4: Connect to Oscar
 
