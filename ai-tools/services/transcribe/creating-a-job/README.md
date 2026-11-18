@@ -8,6 +8,16 @@ A **Job** is a set of audio/video files to transcribe that have the same languag
   * Size limit: 1GB _per file._
   * Duration limit: 5 hours of audio _per file_. 6 hours _total._
 
+{% hint style="info" %}
+**New in Transcribe 2.0.0: Usage indicator**
+
+As usage approaches the daily limit, an indicator (below) will appear to let the users know how many hours they have used, and how many hours they have left for the day.
+
+<img src="../../../.gitbook/assets/image (43).png" alt="Approaching usage limit" data-size="original">
+
+The last job of the day will be allowed to go over the 20-hour limit. However, once that job is submitted, no more files will be allowed to be uploaded.![going over usage limit](<../../../.gitbook/assets/image (48).png>)
+{% endhint %}
+
 {% hint style="warning" %}
 Some files, especially video files, can be incompatible with web browsers and may be rejected. If that happens, please extract the audio from your video file and/or convert the audio to a popular format such as wav or mp3 for compatibility.
 {% endhint %}
