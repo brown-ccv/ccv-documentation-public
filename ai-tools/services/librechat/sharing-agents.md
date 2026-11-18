@@ -6,9 +6,9 @@ This feature is available only to Brown faculty, staff, and students sponsored b
 
 1. Go to the **Agents** tab in the left sidebar.
 2. From the dropdown menu at the top, select the agent you want to share.
-3.  Scroll down and click the share button&#x20;
+3.  Scroll down and click the share button
 
-    <figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 4. In the modal window, choose the group with which you want to share the agent.
 5. You can modify the level of access and ownership that the group has for the agent.
 6. Save your changes

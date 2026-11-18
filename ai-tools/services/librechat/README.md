@@ -28,11 +28,9 @@ Once authenticated, you will be redirected to the main chat interface.
 
 To begin a conversation:
 
-1. Click the **New Chat** button ![](<../../.gitbook/assets/image (38).png>) in the left panel.
+1. Click the **New Chat** button ![](<../../.gitbook/assets/image (37).png>) in the left panel.
 2. Select your desired model from the endpoint selector (e.g., GPT-5.6, Claude5, etc.) located at the top of the chat window.
-3. Type your message in the input box at the bottom and press **Enter or click the send message button** <img src="../../.gitbook/assets/image (40).png" alt="" data-size="line">  **at the bottom right of the chat area**.
-
-
+3. Type your message in the input box at the bottom and press **Enter or click the send message button** <img src="../../.gitbook/assets/image (39).png" alt="" data-size="line"> **at the bottom right of the chat area**.
 
 <figure><img src="../../.gitbook/assets/new-chat-087.gif" alt=""><figcaption></figcaption></figure>
 
@@ -52,7 +50,7 @@ You can review your previous conversations and continue where you left off.
 1. In the left menu, click **Chat History** (the third option from the top).
 2. Select any previous conversation to review or continue the chat.
 
-<figure><img src="../../.gitbook/assets/browse-chat-history--087 (2).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/browse-chat-history--087.gif" alt=""><figcaption></figcaption></figure>
 
 ### Model Selection and Availability
 
