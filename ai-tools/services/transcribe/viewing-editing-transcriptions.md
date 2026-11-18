@@ -20,7 +20,7 @@ The header shows:
 * **Rate transcript**: Please rate your transcriptions, especially the ones that didn't turn out well. Ratings show CCV where _Transcribe_ works and doesn't so we can investigate problems and improve the service.
   1. Click a star next to **Rate transcript** in the header of the transcription page. The **Rate Transcript** dialog will open and the green check mark confirms your rating was saved.
   2. _(Optional)_ In **Comments**, tell us what worked well and what didn't (up to 2,000 characters). For example, you could mention misheard words, wrong speaker labels, or missing sections.
-  3. _(Optional, but very helpful)_ Select **Allow the CCV team to review this transcript and its source file to investigate my rating**. This gives the _Transcribe_ team access to the transcription and audio for analysis.
+  3. _(Optional, but very helpful)_ Select **Allow the CCV team to review this transcript and its source file to investigate my rating**. This gives the Transcribe team your consent to access your transcription and source files (if not already deleted by you or automatically) to investigate any issues based on your feedback. You can revise your feedback and revoke your consent at any time by clicking the 'edit' :pencil2: button next to the star rating.
   4. Click **Submit** to send your comments and consent, or click **Close** if you only want to leave the star rating.
 
 Two buttons on the right side of the header open consolidated help pages:
