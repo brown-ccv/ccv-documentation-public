@@ -11,7 +11,7 @@ At the moment our services are free to the community, however we apply usage lim
 
 ### Per-user limit (daily)
 
-You can upload and transcribe **20 hours** of audio/video files each day. This is a fair-use limit to prevent abuse of the system. The last job of the day is allowed to go over the limit. However, once that job is submitted, you will not be able to upload more files.
+You can upload and transcribe about **20 hours** of audio/video files each day. The last job of the day is allowed to go over the limit. However, once that job is submitted, you will not be able to upload more files until the daily usage limit resets.
 
 A usage indicator will show below the file drop zone once usage is approaching limit (at around 12 hours each day). Users who upload fewer than 12 hours will not see this indicator.
 
