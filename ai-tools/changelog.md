@@ -18,7 +18,7 @@ New features:
 * De-identification is added as an experimental feature. Potentially identifying information in a transcript can now be redacted.
 * A brand new landing page focusing on Transcribe's features!
 * We are planning to integrate Transcribe with Panopto, so that the videos in the latter can be captioned in Transcribe directly.
-* The daily usage limit is now a fair-use limit. The last job of the day is allowed to go over the 20-hour limit. After the last job is submitted, the user will not be able to upload more files or start new jobs.
+* The daily usage limit is now a fair-use limit. The last job of the day is allowed to go over the 20-hour limit. After the last job is submitted, the user will not be able to upload more files or start new jobs until the limit resets at midnight ET.
 
 UI Improvements:
 
