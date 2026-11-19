@@ -8,7 +8,7 @@ icon: swap-arrows
 # What's New in Transcribe
 
 {% updates format="full" %}
-{% update date="2026-11-19" %}
+{% update date="2026-11-20" %}
 ## Transcribe v2.0.0
 
 One year after its release, Transcribe is now at 2.0.0! Lots of updates went into this major milestone:
