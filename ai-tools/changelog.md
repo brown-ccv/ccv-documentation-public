@@ -9,16 +9,17 @@ icon: swap-arrows
 
 {% updates format="full" %}
 {% update date="2026-11-20" %}
-## Transcribe v2.0.0
+## Transcribe v2.0
 
-One year after its release, Transcribe is now at 2.0.0! Lots of updates went into this major milestone:
+One year after its release, Transcribe is now at 2.0! Lots of updates went into this major milestone:
 
 New features:
 
 * De-identification is added as an experimental feature. Potentially identifying information in a transcript can now be redacted.
+* A new logo for Transcribe!
 * A brand new landing page focusing on Transcribe's features!
-* We are planning to integrate Transcribe with Panopto, so that the videos in the latter can be captioned in Transcribe directly.
-* The daily usage limit is now a fair-use limit. The last job of the day is allowed to go over the 20-hour limit. After the last job is submitted, the user will not be able to upload more files or start new jobs until the limit resets at midnight ET.
+* We are planning to integrate Transcribe with Panopto, so that the videos in the latter can be captioned in Transcribe directly. Please keep checking back!
+* We have increased the daily usage limit. The last job of the day is allowed to go over 20 hours, so if you have just a few more hours left for the day, you don't have to wait for the limit to reset. The daily usage limit still resets at 12am ET.
 
 UI Improvements:
 

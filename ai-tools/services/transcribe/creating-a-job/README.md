@@ -15,7 +15,9 @@ As usage approaches the daily limit, an indicator (below) will appear to let the
 
 <img src="../../../.gitbook/assets/image (43).png" alt="Approaching usage limit" data-size="original">
 
-The last job of the day will be allowed to go over the 20-hour limit. However, once that job is submitted, no more files will be allowed to be uploaded.![going over usage limit](<../../../.gitbook/assets/image (48).png>)
+We have increased the daily usage limit. The last job of the day is allowed to go over the 20-hour limit. However, once that job is submitted, no more files will be allowed to be uploaded until the daily usage limit resets at 12am ET.
+
+![going over usage limit](<../../../.gitbook/assets/image (48).png>)
 {% endhint %}
 
 {% hint style="warning" %}
