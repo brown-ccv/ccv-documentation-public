@@ -8,6 +8,12 @@ icon: swap-arrows
 # What's New in Transcribe
 
 {% updates format="full" %}
+{% update date="2026-11-24" %}
+## Transcribe v2.1
+
+Transcribe now supports [exporting your transcript to Google Docs](services/transcribe/downloading-transcriptions/#exporting-a-transcript-to-google-docs-saved-in-google-drive)!
+{% endupdate %}
+
 {% update date="2026-11-20" %}
 ## Transcribe v2.0
 

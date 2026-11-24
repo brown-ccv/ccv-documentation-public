@@ -26,10 +26,15 @@ Select `Download transcript` to open the download dialog. Choose either format:
 
 * Text file (`.txt`)
 * Word document (`.docx`)
+* Google Docs (Saved to Google Drive)
 
 You can group consecutive utterances from the same speaker into one segment.
 
 <figure><img src="../../../.gitbook/assets/image (36).png" alt="Download transcript dialog for a single transcript" width="375"><figcaption></figcaption></figure>
+
+#### Exporting a transcript to Google Docs (Saved in Google Drive)
+
+If you choose to save your transcript to Google Drive, the first time you do so, Transcribe will ask for permission to add a file to your Google Drive. Once you grant Transcribe the permission, the Google Doc will be saved to the "My Drive" folder, and a link will show on the dialog. You can move the file to other locations on your Google Drive afterwards.
 
 ### Downloading captions or subtitles (Pro models only)
 
