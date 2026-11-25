@@ -4,7 +4,14 @@ CCV provides access to HPC resources for classes, workshops, demonstrations, and
 
 ## Account Requests and Software Needs <a href="#account-requests-and-software-needs" id="account-requests-and-software-needs"></a>
 
-Requests for class accounts should be made in writing to support@ccv.brown.edu two weeks prior to the beginning of class, and should be made in bulk. Please provide the Brown username (required), name and Brown Email address for the students, TAs and instructor as well as the course number and the semester. Requests for specific software should also be made two weeks before the start of the semester, and should be properly licensed, tested and verified to work by an instructor or TA.
+Please submit all requests in writing to support@ccv.brown.edu two weeks prior to the start of the semester.
+
+* **Class Accounts**: Submit a single bulk request that includes the course number, semester, and the following details for all students, TAs, and instructors:
+  * Brown username _(required)_
+  * Full name
+  * Brown email address
+* **Software Requests**: Any custom or specific software must also be requested two weeks in advance. Before submitting, an instructor or TA must ensure the software is properly licensed, tested, and verified to work.
+* **Oscar account requests from Students**: All students must also submit an individual Oscar account request form, which includes a mandatory Data Security Attestation. Once your initial bulk request is received, CCV will provide detailed instructions for you to share with your students. _Note: Student Oscar accounts cannot be created until their individual request forms are submitted._
 
 ## Usage Expectations and System Utilization <a href="#usage-expectations-and-system-utilization" id="usage-expectations-and-system-utilization"></a>
 
